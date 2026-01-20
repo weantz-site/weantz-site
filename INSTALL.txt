@@ -1,0 +1,16 @@
+WEANTZ NAVIGATION HEADER INSTALL
+
+1) Upload header.html and nav.css into your GitHub repository root.
+
+2) Add this line inside <head> of every page:
+<link rel="stylesheet" href="nav.css">
+
+3) Add this line immediately after <body> on every page:
+<?php include 'header.html'; ?>
+
+If PHP is not enabled, copy the contents of header.html and paste it directly after <body> on each page.
+
+4) Commit message:
+Build global navigation header for WeAntz site
+
+This makes the site fully navigable and public-ready.
