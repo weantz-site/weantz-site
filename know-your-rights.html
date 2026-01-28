@@ -1,93 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Know Your Rights | WeAntz</title>
-<meta name="description" content="WeAntz: Know Your Rights, Minnesota resources, and community support.">
-<style>
-.front-door{background:#0b1220;color:#fff;padding:2.5rem 1rem;border-bottom:1px solid rgba(255,255,255,.1)}
-.front-door-inner{max-width:1100px;margin:0 auto}
-.front-door h2{font-size:1.6rem;line-height:1.3;margin-bottom:.75rem}
-.front-door-sub{opacity:.9;margin-bottom:1.25rem}
-.resources{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
-.resource{background:#111a2e;border-radius:12px;padding:1rem}
-.resource h3{margin:.25rem 0 .25rem 0;font-size:1.1rem}
-.resource a{color:#8fd3ff;word-break:break-all}
-.front-door-share{margin-top:1.25rem;font-size:1.05rem}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Know Your Rights — United States | WeAntz</title>
+  <meta name="description" content="Know your basic rights when interacting with law enforcement or immigration authorities in the United States. National resources and safety guidance." />
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .container{max-width:1100px;margin:2rem auto;padding:0 1rem}
+    .section{margin-bottom:1.25rem}
+    .resources{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+    .resource{background:#111a2e;border-radius:10px;padding:1rem;color:#e6eef8}
+    .notice{background:#fff3cd;color:#856404;padding:0.75rem;border-radius:8px}
+    .footer-nav{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;padding:1rem 0}
+    a.external{color:#93c5fd}
+  </style>
 </head>
 <body>
-
-<section class="front-door">
-  <div class="front-door-inner">
-    <h2>Minnesota neighbors: If you or someone you love needs immigration legal help, emergency support, or refugee services, these trusted organizations are here for you.</h2>
-    <p class="front-door-sub">Community safety is human. Support is local. Help is here.</p>
-
-    <div class="resources">
-      <div class="resource">
-        <h3>Immigrant Law Center of Minnesota (ILCM)</h3>
-        <p>Free or low-cost immigration legal assistance</p>
-        <p><strong>General:</strong> 1-800-223-1368 &nbsp;|&nbsp; <strong>Detention:</strong> 651-641-1011</p>
-        <a href="https://www.ilcm.org/immigration-help" target="_blank" rel="noopener">https://www.ilcm.org/immigration-help</a>
+  <!-- Inline header/navigation -->
+  <header class="site-header">
+    <div class="nav-inner">
+      <div class="brand">
+        <a href="index.html">WeAntz</a>
+        <span class="tagline">Peace • Rights • Community • Constitution</span>
       </div>
 
-      <div class="resource">
-        <h3>Unidos MN – Monarca Rapid Response Line</h3>
-        <p>24-hour emergency support for ICE activity and legal referrals</p>
-        <p><strong>ICE Activity:</strong> 612-441-2881 &nbsp;|&nbsp; <strong>Legal Info:</strong> 651-372-8642</p>
-        <a href="https://unidos-mn.org" target="_blank" rel="noopener">https://unidos-mn.org</a>
-      </div>
-
-      <div class="resource">
-        <h3>Immigrant Defense Network (IDN)</h3>
-        <p>Statewide legal defense referrals and ICE activity verification</p>
-        <p><strong>Phone:</strong> 612-249-8736</p>
-        <a href="https://immigrantdefensenetwork.org" target="_blank" rel="noopener">https://immigrantdefensenetwork.org</a>
-      </div>
-
-      <div class="resource">
-        <h3>MIRAC – Minnesota Immigrant Rights Action Committee</h3>
-        <p>Community defense, ICE activity verification, and support network</p>
-        <p><strong>Email:</strong> miracmn@gmail.com &nbsp;|&nbsp; <strong>Address:</strong> 4200 Cedar Ave S, Minneapolis</p>
-        <a href="https://www.miracmn.com" target="_blank" rel="noopener">https://www.miracmn.com</a>
-      </div>
-
-      <div class="resource">
-        <h3>Volunteer Lawyers Network (VLN)</h3>
-        <p>Free immigration and civil legal clinics</p>
-        <p><strong>Phone:</strong> 612-752-6677</p>
-        <a href="https://www.vlnmn.org/help/clinics" target="_blank" rel="noopener">https://www.vlnmn.org/help/clinics</a>
-      </div>
-
-      <div class="resource">
-        <h3>Pillsbury United Communities – Legal Services</h3>
-        <p>Free civil legal help: immigration, housing, debt collection</p>
-        <p><strong>Phone:</strong> 612-338-5282</p>
-        <a href="https://pillsburyunited.org/programs/legal-services/" target="_blank" rel="noopener">https://pillsburyunited.org/programs/legal-services/</a>
-      </div>
-
-      <div class="resource">
-        <h3>International Institute of Minnesota</h3>
-        <p>Refugee resettlement and support services</p>
-        <p><strong>Phone:</strong> 651-377-8601 &nbsp;|&nbsp; <strong>Address:</strong> 1694 Como Ave, St. Paul</p>
-        <a href="https://iimn.org/program/resettlement/" target="_blank" rel="noopener">https://iimn.org/program/resettlement/</a>
-      </div>
-
-      <div class="resource">
-        <h3>Lutheran Social Service of Minnesota – Refugee Services</h3>
-        <p>Refugee resettlement and legal services</p>
-        <p><strong>Phone:</strong> 651-642-5990 &nbsp;|&nbsp; <strong>Address:</strong> 2485 Como Ave, St. Paul</p>
-        <a href="https://www.lssmn.org/services/refugees/services" target="_blank" rel="noopener">https://www.lssmn.org/services/refugees/services</a>
-      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="know-your-rights.html">Know Your Rights</a>
+        <a href="states.html">States</a>
+        <a href="glossary.html">Glossary</a>
+        <a href="support.html">Support</a>
+        <a href="about.html">About</a>
+      </nav>
     </div>
+  </header>
 
-    <p class="front-door-share"><strong>Share this so it reaches the people who need it most.</strong></p>
-  </div>
-</section>
+  <main id="main" class="container">
+    <h1>Know Your Rights — United States</h1>
+    <p class="section">This page provides plain-language, nationwide guidance to help you protect your rights when interacting with police, immigration enforcement (ICE), or other authorities. This is general information, not legal advice. If you need legal help, contact a licensed attorney or one of the organizations listed below.</p>
 
-<main style="max-width:1100px;margin:2rem auto;padding:0 1rem;">
-<h1>Know Your Rights</h1><p>Plain-language guidance to protect yourself and your community.</p>
-</main>
+    <section class="section">
+      <h2>Quick summary</h2>
+      <ul>
+        <li>You have the right to remain silent — you can politely say you wish to remain silent.</li>
+        <li>You have the right to refuse consent to a search of your person, belongings, or home in many circumstances. Ask to see a warrant before allowing entry.</li>
+        <li>You have the right to an attorney. If detained or arrested, ask for a lawyer immediately and do not answer questions without one.</li>
+        <li>Do not lie or provide false documents. Carry ID if you choose, but know your rights about whether you must show it in your state.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>If police stop you (street or traffic stop)</h2>
+      <ol>
+        <li>Stay calm and keep your hands visible.</li>
+        <li>You may ask: "Am I free to go?" If the officer says yes, calmly walk away.</li>
+        <li>If you are not free to go (you are being detained or arrested), say: "I choose to remain silent. I want to speak to a lawyer."</li>
+        <li>Do not resist, even if you believe the stop is unlawful — resisting can lead to additional charges. You can challenge unlawful conduct later in court with a lawyer.</li>
+      </ol>
+    </section>
+
+    <section class="section">
+      <h2>If immigration enforcement (ICE) comes to your home or stops you</h2>
+      <ul>
+        <li>Ask to see a judicial warrant — ICE needs a judge-signed warrant to enter a home without consent (determine local law applicability; administrative warrants are different).</li>
+        <li>Do not consent to entry or searches without a warrant. If officers claim they have a warrant, ask to step outside and show it — do not invite them in.</li>
+        <li>If detained, say: "I wish to remain silent. I want to speak to a lawyer." Ask to speak to your consulate if you are not a U.S. citizen.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>At airports, checkpoints, and border crossings</h2>
+      <p>Different rules can apply at borders and ports of entry. Customs and Border Protection (CBP) has broader authority. If you are a U.S. citizen, you generally have rights but may be subject to questioning. Non-citizens have additional considerations; consult a lawyer if possible.</p>
+    </section>
+
+    <section class="section">
+      <h2>What to do if someone is detained or arrested</h2>
+      <ul>
+        <li>Get as much information as you can: names, badge numbers, agency, location where the person is taken.</li>
+        <li>Contact a local immigration legal provider or an attorney immediately. Use the national resources below if you don’t have a lawyer.</li>
+        <li>Do not sign anything without an attorney present.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Recording and documenting encounters</h2>
+      <p>In most U.S. states you may record police and immigration officers in public spaces where you can legally be. Avoid interfering with officers’ actions. If you record, try to capture badge numbers, license plates, and take notes about what happened.</p>
+    </section>
+
+    <section class="section">
+      <h2>Safety scripts (short things to say)</h2>
+      <p>If you want to remain silent: "I am going to remain silent. I want to speak to a lawyer."</p>
+      <p>If someone at your door: "I do not consent to entry without a judicial warrant. Please slide the warrant under the door or step outside to show it."</p>
+    </section>
+
+    <section class="section notice">
+      <strong>Notice:</strong> This page provides general information and does not replace legal advice. Laws vary by state and local jurisdictions. For case-specific help, contact an attorney or one of the legal organizations below.</section>
+
+    <section class="section">
+      <h2>National organizations & resources</h2>
+      <div class="resources">
+        <div class="resource">
+          <h3>ACLU (American Civil Liberties Union)</h3>
+          <p><a class="external" href="https://www.aclu.org" target="_blank" rel="noopener">https://www.aclu.org</a> — Civil rights information and local ACLU affiliates.</p>
+        </div>
+        <div class="resource">
+          <h3>National Immigration Law Center (NILC)</h3>
+          <p><a class="external" href="https://www.nilc.org" target="_blank" rel="noopener">https://www.nilc.org</a> — Immigration policy and legal resources.</p>
+        </div>
+        <div class="resource">
+          <h3>Immigration Advocates Network</h3>
+          <p><a class="external" href="https://www.immigrationadvocates.org" target="_blank" rel="noopener">https://www.immigrationadvocates.org</a> — Find local legal help and nonprofit providers.</p>
+        </div>
+        <div class="resource">
+          <h3>RAICES</h3>
+          <p><a class="external" href="https://www.raicestexas.org" target="_blank" rel="noopener">https://www.raicestexas.org</a> — Legal services and rapid response (regional).</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>How to find local help</h2>
+      <p>Use the Immigration Advocates Network directory above to find nonprofit legal service providers. Many states have rapid response hotlines and local immigrant rights groups — see our States pages for state-specific resources.</p>
+    </section>
+
+    <section class="section">
+      <h2>If you need urgent help</h2>
+      <ul>
+        <li>If someone's safety is at immediate risk, call 911.</li>
+        <li>For urgent immigration-related rapid response, search our States pages or contact national organizations above; local hotlines are listed on state pages.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Footer with navigation -->
+  <footer class="site-footer" style="background:#0b1220;color:#cbd9ee;padding:1.25rem 0;margin-top:2rem">
+    <div style="max-width:1100px;margin:0 auto;padding:0 1rem;text-align:center">
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a> | 
+        <a href="states.html">States</a> | 
+        <a href="glossary.html">Glossary</a> | 
+        <a href="support.html">Support</a> | 
+        <a href="about.html">About</a>
+      </nav>
+      <p style="margin-top:0.75rem;font-size:0.95rem">© 2026 WeAntz · Peaceful · Nonviolent · Constitution-Centered · Not legal advice</p>
+    </div>
+  </footer>
 </body>
 </html>
