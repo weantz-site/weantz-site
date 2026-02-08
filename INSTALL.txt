@@ -1,16 +1,37 @@
-WEANTZ NAVIGATION HEADER INSTALL
+WEANTZ NAVIGATION HEADER INSTALL (with Search)
 
-1) Upload header.html and nav.css into your GitHub repository root.
+1) Upload nav.css into your GitHub repository root.
 
-2) Add this line inside <head> of every page:
+2) Add this line inside <head> of ROOT pages:
 <link rel="stylesheet" href="nav.css">
 
-3) Add this line immediately after <body> on every page:
-<?php include 'header.html'; ?>
+For pages inside /states/ use:
+<link rel="stylesheet" href="../nav.css">
 
-If PHP is not enabled, copy the contents of header.html and paste it directly after <body> on each page.
+3) Paste this block immediately after <body> (ROOT pages):
+<div class="weantz-header" role="banner">
+  <div class="nav-container">
+    <a class="brand" href="index.html">WeAntz</a>
 
-4) Commit message:
-Build global navigation header for WeAntz site
+    <form class="nav-search" action="search.html" method="get" role="search">
+      <label class="sr-only" for="q">Search WeAntz resources</label>
+      <input id="q" name="q" type="search" placeholder="Search resources…" autocomplete="off" />
+      <button type="submit">Search</button>
+    </form>
 
-This makes the site fully navigable and public-ready.
+    <nav class="nav" aria-label="Primary">
+      <a href="know-your-rights.html">Know Your Rights</a>
+      <a href="peaceful-action.html">Peaceful Action</a>
+      <a href="states.html">States</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</div>
+
+For pages inside /states/, change links and action to start with ../
+
+4) (Recommended) Create a search page:
+- Add search.html that reads the ?q= query and filters a resource list.
+
+5) Commit message:
+Build global navigation header with search for WeAntz site

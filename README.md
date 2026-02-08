@@ -1,16 +1,29 @@
-## Hi there 👋
+# WeAntz Site
 
-<!--
-**weantz-site/weantz-site** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+A simple, static site for **Know Your Rights** information and trusted local resources.
 
-Here are some ideas to get you started:
+## Pages
+- Home: `index.html`
+- Know Your Rights: `know-your-rights.html`
+- Peaceful Action: `peaceful-action.html`
+- States directory: `states.html`
+- Support: `support.html`
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Global Navigation Header
+This site uses a shared navigation header styled by `nav.css`.
+
+### Add to every HTML page (root pages)
+1. In `<head>`:
+```html
+<link rel="stylesheet" href="nav.css">
+```
+2. Immediately after `<body>`:
+Paste the navigation header markup (see `INSTALL.txt`).
+
+### States pages (inside `/states/`)
+Use `../nav.css` and `../` links.
+
+## Development
+Open the HTML files directly, or serve locally:
+- `python3 -m http.server`
+
